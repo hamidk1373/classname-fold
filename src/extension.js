@@ -23,10 +23,14 @@ function foldAllClassNames() {
   const openingClassNameRegex = /className={/g
   let classNameOpeningLineNumbers = []
 
+  const objectCloseRegex = /({|}|\)|\])\s*(\/\/.*)?$/
   for (let lineNumber = 0; lineNumber < document.lineCount; lineNumber++) {
     let line = document.lineAt(lineNumber)
 
-    if (openingClassNameRegex.test(line.text)) {
+    if (
+      openingClassNameRegex.test(line.text) &&
+      !objectCloseRegex.test(line.text)
+    ) {
       classNameOpeningLineNumbers.push(lineNumber)
     }
   }

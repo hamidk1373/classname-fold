@@ -1,6 +1,6 @@
 {
 	"name": "classname-fold",
-	"publisher": "hamidkarami",
+	"publisher": "Hamidk",
 	"displayName": "classname-fold",
 	"description": "Fold ClassName objects",
 	"version": "0.1.1",
@@ -15,6 +15,7 @@
 		"Other"
 	],
 	"main": "./src/extension.js",
+	"activationEvents": [],
 	"contributes": {
 		"commands": [
 			{
