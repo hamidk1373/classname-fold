@@ -1,12 +1,12 @@
 {
-	"name": "svg-fold",
-	"publisher": "misbahansori",
-	"displayName": "svg-fold",
-	"description": "Fold SVG tag",
+	"name": "classname-fold",
+	"publisher": "hamidkarami",
+	"displayName": "classname-fold",
+	"description": "Fold ClassName objects",
 	"version": "0.1.1",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/misbahansori/svg-fold"
+		"url": "https://github.com/hamidk1373/classname-fold"
 	  },
 	"engines": {
 		"vscode": "^1.58.0"
@@ -14,22 +14,28 @@
 	"categories": [
 		"Other"
 	],
-	"activationEvents": [
-		"onCommand:svg-fold.foldAllSVGTag"
-	],
 	"main": "./src/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "svg-fold.foldAllSVGTag",
-				"title": "Fold all SVG tag"
+				"command": "classname-fold.foldAllClassNameTag",
+				"title": "Fold all classNames"
+			},
+			{
+				"command": "classname-fold.unfoldAllClassNameTag",
+				"title": "Unfold all classNames"
 			}
 		],
 		"keybindings": [
             {
-                "command": "svg-fold.foldAllSVGTag",
-                "key": "ctrl+k ctrl+9",
-                "mac": "cmd+k cmd+9"
+                "command": "classname-fold.foldAllClassNameTag",
+                "key": "alt+]",
+                "mac": "ctrl+]"
+            },
+			{
+                "command": "classname-fold.unfoldAllClassNameTag",
+                "key": "alt+[",
+                "mac": "ctrl+["
             }
         ]
 	},

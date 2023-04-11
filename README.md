@@ -1,20 +1,17 @@
-# SVG Fold
+# Fold ClassNames in VScode
 
-Fold the SVG tag to save vertical space.
-
-![svgfold](https://github.com/misbahansori/svg-collapse/raw/master/img/example-compressed.gif)
-
-## Usage
+## short keys for Windows & linux
 
 ```
-Cmd + shift + p
-Select "Fold all SVG tag"
+alt+]  => close all className objects
+
+alt+[ => open all className objects
 ```
 
-## Shortcut
-```
-Cmd + k
-Cmd + 9
-```
+## short keys for Mac
 
-**Enjoy!**
+```
+ctrl+]  => close all className objects
+
+ctrl+[ => open all className objects
+```
